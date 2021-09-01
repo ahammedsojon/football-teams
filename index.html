@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Teams</title>
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1 class="text-center text-success my-5">Search Your Favourite Football Team</h1>
+    <div class="container">
+
+        <!-- search area -->
+        <div class="row">
+            <div class="input-group mb-3 w-50 mx-auto">
+                <input id="search-field" type="text" class="form-control"
+                    placeholder="search team name what you want to see" aria-label="" aria-describedby="button-addon2">
+                <button onclick="searchTeam()" class="btn btn-outline-success" type="button"
+                    id="button-addon2">Search</button>
+            </div>
+        </div>
+        <!-- spinners -->
+        <div id="spinners" class=" d-none text-center">
+            <div class="spinner-border" role="status">
+                <span class="visually-hidden"></span>
+            </div>
+        </div>
+        <!-- team details -->
+        <div id="team-details" class="w-50 mx-auto mb-5">
+
+        </div>
+
+        <!-- search result -->
+        <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4">
+        </div>
+    </div>
+    <script src="js/sportsdb-team.js"></script>
+</body>
+
+</html>
